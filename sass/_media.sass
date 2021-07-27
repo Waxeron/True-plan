@@ -30,21 +30,40 @@
   .navbar
     &__search, &-menu,&__user
       display: none
-  .menu-button
-    display: flex
-    width: 16px
-    height: 11px
-    padding: 0
-    align-items: center
-    justify-content: space-between
-    flex-direction: column
-    border: none
-    background-color: #fff
-    cursor: pointer
-    &__line
+  .menu
+    &-button
+      display: flex
       width: 16px
-      height: 1px
-      background-color: $text-color
+      height: 11px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+
+  .hotel
+    &-name
+      flex-basis: 100%
+    &-wrapper
+      justify-content: space-between
+    &-stars
+      flex-basis: auto
+    &-info
+      &__text
+        width: 100%
+      &__name
+        margin-top: 10px
+      &__rating
+        display: none
+      &__offer
+        order: -1
+        margin-left: 0
 
 @media ( max-width:  579px)
   .logo
